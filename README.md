@@ -1,2 +1,2 @@
 # OnlineShop
-It's simple OnlineShop with MVC 
+It's simple Online PetShop with MVC 
