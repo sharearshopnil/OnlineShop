@@ -197,66 +197,53 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
-
   <script>
-		$(document).ready(function(){
+    
+	$(document).ready(function(){
 
-		var quantitiy=0;
-		   $('.quantity-right-plus').click(function(e){
+var quantitiy=0;
+  $('.quantity-right-plus').click(function(e){
 
-		        // Stop acting like a button
-		        e.preventDefault();
-		        // Get the field name
-		        var quantity = parseInt($('#quantity').val());
+      // Stop acting like a button
+      e.preventDefault();
+      // Get the field name
+      var quantity = parseInt($('#quantity').val());
 
-		        // If is not undefined
+      // If is not undefined
 
-		            $('#quantity').val(quantity + 1);
+          $('#quantity').val(quantity + 1);
 
 
-		            // Increment
+          // Increment
 
-		    });
+  });
 
-		     $('.quantity-left-minus').click(function(e){
-		        // Stop acting like a button
-		        e.preventDefault();
-		        // Get the field name
-		        var quantity = parseInt($('#quantity').val());
+      $('.quantity-left-minus').click(function(e){
+      // Stop acting like a button
+      e.preventDefault();
+      // Get the field name
+      var quantity = parseInt($('#quantity').val());
 
-		        // If is not undefined
+      // If is not undefined
 
-		            // Increment
-		            if(quantity>0){
-		            $('#quantity').val(quantity - 1);
-		            }
-		    });
+          // Increment
+          if(quantity>0){
+           $('#quantity').val(quantity - 1);
+          }
+      });
 
-		});
-    $(window).load(function () {
-      $('#messageModal').modal('show');
-    });
-    document.querySelector("#file_name").onchange = function(){
-      document.getElementById("file_name_label").textContent = this.files[0].name;
-    }
-    document.querySelector("#update_file_name").onchange = function(){
-      document.getElementById("update_file_name_label").textContent = this.files[0].name;
-    }
+  });
+  $(window).load(function () {
+    $('#messageModal').modal('show');
+  });
+  document.querySelector("#file_name").onchange = function(){
+    document.getElementById("file_name_label").textContent = this.files[0].name;
+  }
+  document.querySelector("#update_file_name").onchange = function(){
+    document.getElementById("update_file_name_label").textContent = this.files[0].name;
+  }
   </script>
-  <script>
-    function update_form_variables(pet_id, pet_name) {
-      var pet_id_textbox = document.getElementById("update_pet_id");
-      var pet_name_textbox = document.getElementById("update_pet_name");
-
-      pet_id_textbox.value=pet_id
-      pet_name_textbox.value=pet_name;
-    }
-    function delete_form_variables(pet_id) {
-      var pet_id_textbox = document.getElementById("delete_pet_id");
-
-      pet_id_textbox.value=pet_id
-    }
-  </script>
+  <script src="javascript/admin-pets.js"></script>
 
   </body>
 </html>

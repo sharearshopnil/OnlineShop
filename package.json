@@ -1,0 +1,22 @@
+{
+  "name": "petshop_management",
+  "version": "1.0.0",
+  "description": "An ecommerce website designed to manage the inventory of the petshop as well as an ordering portal for consumers.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.12.11",
+    "jest": "^26.6.3"
+  },
+  "dependencies": {
+    "babel-jest": "^26.6.3",
+    "ts-jest": "^26.4.4"
+  }
+}
